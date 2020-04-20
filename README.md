@@ -1,3 +1,1 @@
-### Summary
-
-This is just for me to test git :) 
+This is just for me to practice git :) 
