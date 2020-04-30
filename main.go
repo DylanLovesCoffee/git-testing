@@ -8,6 +8,8 @@ import (
 	"github.com/DataDog/datadog-go/statsd"
 )
 
+const interval time.Duration = 15
+
 func initStatsdClient() *statsd.Client {
 	host := os.Getenv("DD_AGENT_HOST")
 	if host == "" {
@@ -43,6 +45,6 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		time.Sleep(time.Second * 15)
+		time.Sleep(time.Second * interval)
 	}
 }
