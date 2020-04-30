@@ -8,6 +8,7 @@ import (
 	"github.com/DataDog/datadog-go/statsd"
 )
 
+// Create a merge conflict!
 const interval time.Duration = 15
 
 func initStatsdClient() *statsd.Client {
