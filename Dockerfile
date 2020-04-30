@@ -1,4 +1,4 @@
-FROM golang:1.12.5 
+FROM golang:1.13.4 
 
 WORKDIR $GOPATH/src/github.com/DylanLovesCoffee/dogstatsd-go
 COPY . .
